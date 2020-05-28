@@ -34,8 +34,34 @@ section {
 	min-height: 600px;
 }
 
+.p1, .p2 {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 1s;
+}
+
+.p2 {
+	transform: translate(50px, 0);
+}
+
+.p1.pMuncul, .p2.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
 .portofolio {
 	background-color: #eee;
+}
+
+.portofolio .thumbnail {
+	opacity: 0;
+	transition: translate(0, -40px);
+	transition: .3s;
+}
+
+.portofolio .thumbnail.muncul{
+	opacity: 1;
+	transition: translate(0,0);
 }
 
 .contact {

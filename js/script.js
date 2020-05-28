@@ -17,6 +17,12 @@ $('.page-scroll').on('click', function(e){
 
 
 // menyimpan parallax
+// about
+$(window).on('load', function() {
+    $('.p1').addClass('pMuncul');
+    $('.p2').addClass('pMuncul');
+});
+
 $(window).scroll(function() {
      var wScroll = $(this).scrollTop();
 
@@ -31,4 +37,16 @@ $(window).scroll(function() {
      $('.jumbotron p').css({
          'transfrom' : 'translate(0px, '+ wScroll/1.2 +'%)'
      });
+
+
+// untuk portofolio
+   if(wScroll > $('.portofolio').offset().top - 250 ) {
+      $('.portofolio .thumbnail').each(function(i) {
+          setTimeout(function() {
+              $('.portofolio .thumbnail').eq(i).addClass('muncul');
+          }, 300 * (i+1));
+      });
+
+  
+   }
 });
