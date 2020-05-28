@@ -12,6 +12,7 @@ body {
 	background-attachment: fixed;
 	background-size: contain;
 	background-position: 0 - 100px;
+	overflow: hidden;
 }
 
 .jumbotron img {
