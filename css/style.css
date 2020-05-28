@@ -34,6 +34,12 @@ section {
 	min-height: 600px;
 }
 
+img {
+	border: 1px solid #ddd;
+}
+
+}
+
 .p1, .p2 {
 	opacity: 0;
 	transform: translate(-50px, 0);
